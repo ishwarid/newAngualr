@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-12">
+    <div class="nav-bar-top">
+      <!-- <mat-tab-group (selectedTabChange)="showNavData($event)">
+        <mat-tab [ngClass]="{'active': eventData == 'today'}" label="Today"></mat-tab>
+        <mat-tab label="Last Week"> </mat-tab>
+        <mat-tab label="Last Month"> </mat-tab>
+
+        <mat-tab label="Last Quarter"> </mat-tab>
+        <mat-tab label="Last Year"> </mat-tab>
+      </mat-tab-group> -->
+      <div class="nav-bar-top">
+          <div class="nav-row">
+            <ul class="nav">
+              <li [ngClass]="{'active-li': event == 'today'}"><a [ngClass]="{'active': event == 'today'}"
+                  role="button" (click)="showNavData('today')">TODAY</a></li>
+              <li [ngClass]="{'active-li': event == 'last_week'}"><a [ngClass]="{'active': event == 'last_week'}"
+                  role="button" (click)="showNavData('last_week')">LAST WEEK</a></li>
+              <li [ngClass]="{'active-li': event == 'last_month'}"><a [ngClass]="{'active': event == 'last_month'}"
+                  role="button" (click)="showNavData('last_month')">LAST MONTH</a></li>
+              <li [ngClass]="{'active-li': event == 'last_quarter'}"><a
+                  [ngClass]="{'active': event == 'last_quarter'}" role="button"
+                  (click)="showNavData('last_quarter')">THIS QUARTER</a></li>
+              <li [ngClass]="{'active-li': event == 'last_year'}"><a [ngClass]="{'active': eventData == 'last_year'}"
+                  role="button" (click)="showNavData('last_year')">THIS YEAR</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+ 
+</div>

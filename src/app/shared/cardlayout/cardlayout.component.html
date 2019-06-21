@@ -1,0 +1,168 @@
+<div class="row">
+  <div class="col-12">
+      <div class="card-box-right" style="background-color: #1976D2;">
+          <div class="name-div">
+            {{sales_persons[0].name}}
+          </div>
+          <div class="details-div">
+            <div class="table">
+              <div class="row">
+                <div class="cell-heading">
+                  NEW MRR
+                </div>
+                <div class="cell-val" *ngIf="sales_persons?.length > 0  ">
+
+                  {{sales_persons[0].rev}}
+                </div>
+                <div class="cell-val" *ngIf="sales_persons?.length == 0  ">
+
+                  0
+                </div>
+
+
+              </div>
+              <div class="row">
+                <div class="cell-heading">
+                  LOGOS
+                </div>
+
+                <div class="cell-val" *ngIf="sales_persons?.length > 0  ">
+
+                  {{sales_persons[0].logos}}
+                </div>
+                <div class="cell-val" *ngIf="sales_persons?.length == 0  ">
+
+                  0
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell-heading">
+                  CALLS
+                </div>
+
+                <div class="cell-val" *ngIf="sales_persons?.length > 0 ">
+
+                  {{sales_persons[0].calls}}
+                </div>
+                <div class="cell-val" *ngIf="sales_persons?.length  == 0  ">
+
+                  0
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+       
+  </div>
+  <div class="col-12">
+      <div class="card-box-right" style=" background-color:#2196F3;">
+          <div class="name-div">
+            {{sales_persons[1].name}}
+          </div>
+          <div class="details-div">
+            <div class="table">
+              <div class="row">
+                <div class="cell-heading">
+                  NEW MRR
+                </div>
+
+                <div class="cell-val" *ngIf="sales_persons?.length > 0  ">
+
+                  {{sales_persons[1].rev}}
+                </div>
+                <div class="cell-val" *ngIf="sales_persons?.length == 0  ">
+
+                  0
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="cell-heading">
+                  LOGOS
+                </div>
+                <div class="cell-val" *ngIf="sales_persons?.length > 0  ">
+
+                  {{sales_persons[1].logos}}
+                </div>
+                <div class="cell-val" *ngIf="sales_persons?.length == 0  ">
+
+                  0
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="cell-heading">
+                  CALLS
+                </div>
+                <div class="cell-val" *ngIf="sales_persons?.length > 0 ">
+
+                  {{sales_persons[1].calls}}
+                </div>
+                <div class="cell-val" *ngIf="sales_persons?.length  == 0  ">
+
+                  0
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+       
+  </div>
+  <div class="col-12">
+      <div class="card-box-right" style=" background-color:#64B5F6;">
+          <div class="name-div">
+              {{sales_persons[2].name}}
+            </div>
+            <div class="details-div">
+              <div class="table">
+                <div class="row">
+                  <div class="cell-heading">
+                    NEW MRR
+                  </div>
+                  <div class="cell-val" *ngIf="sales_persons?.length > 0  ">
+  
+                    {{sales_persons[2].rev}}
+                  </div>
+                  <div class="cell-val" *ngIf="sales_persons?.length == 0  ">
+  
+                    0
+                  </div>
+  
+                </div>
+                <div class="row">
+                  <div class="cell-heading">
+                    LOGOS
+                  </div>
+                  <div class="cell-val" *ngIf="sales_persons?.length > 0  ">
+  
+                    {{sales_persons[2].logos}}
+                  </div>
+                  <div class="cell-val" *ngIf="sales_persons?.length == 0  ">
+  
+                    0
+                  </div>
+  
+                </div>
+  
+            
+              <div class="row">
+                <div class="cell-heading">
+                  CALLS
+                </div>
+                <div class="cell-val" *ngIf="sales_persons?.length > 0 ">
+  
+                  {{sales_persons[2].calls}}
+                </div>
+                <div class="cell-val" *ngIf="sales_persons?.length  == 0  ">
+  
+                  0
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>

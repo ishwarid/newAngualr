@@ -1,0 +1,49 @@
+.table {display:block; margin: 30px;}
+.row { padding-right: 0px;
+    padding-left: 0px; 
+    display: inline;
+    
+}
+.cell {display:inline-block; margin-top: auto; margin-bottom: auto;}
+.name-div{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: regular;
+    color: #fff;
+}
+.cell-heading{
+   
+    text-align: left;
+    font-size: 18px;   
+    color: #fff;
+    display:inline-block;
+    width: 50%;
+    margin-left: 5%;
+    padding: 7px;
+   
+}
+.cell-val{
+   
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    display:inline-block;
+    
+    width: 50%;
+}
+.card-box-right{
+    width: 100%;
+    height: 230px;
+    float: right;   
+    margin-bottom: 40px;
+    background-image: url(/assets/images/winner.png);
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    background-size: 140px;
+}
+.col-12{
+    padding-right: 0px;
+    padding-left: 0px;
+}

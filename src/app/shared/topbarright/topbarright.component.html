@@ -1,0 +1,16 @@
+<div class="row" style="background-color: white; height: 50px;">
+  <div class="col-12">
+    <div class="nav-bar-top">      
+      <div class="nav-row">
+          <ul class="nav">
+            <li [ngClass]="{'active-li': selectedItem == 'top'}"><a [ngClass]="{'active': eventData == 'today'}"
+                role="button" (click)="showNavData('top')">TOP</a></li>
+            <li [ngClass]="{'active-li': selectedItem == 'bottom'}"><a [ngClass]="{'active': eventData == 'last_week'}"
+                role="button" (click)="showNavData('bottom')">BOTTOM</a></li>
+           
+          </ul>
+        </div>
+    </div>
+  </div>
+ 
+</div>

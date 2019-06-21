@@ -1,0 +1,37 @@
+<div id="salesData-overlay" *ngIf="loading.salesData">
+   <div class="spinner"></div> 
+  <app-loader></app-loader>
+</div>
+
+
+<div class="main">
+  <div>
+      <app-header></app-header>
+  </div>
+  <div class="top-nav">
+    <app-navlayout (timefarmeData)="showData($event)" [event]="timeframe"></app-navlayout>
+  </div>
+  <div class="bottom-nav">
+    
+    <div class="wrapper">
+      <div id="one">
+        <app-topbar ></app-topbar>
+      </div>
+      <div id="two"> <app-topbarright [selectedItem]="selectedItem" (selectedItemData)="selectedData($event)" ></app-topbarright> </div>
+  </div>
+  </div>
+  <div class="bottom-nav">
+    
+    <div class="wrapper">
+      <div id="one">
+        <app-funnellayout [funnel_data]="funnel_data" [revennu]="revennu" [call_done]="call_done" [wins]= "wins" [event]="timeframe" style="position: relative;"></app-funnellayout>
+      </div>
+      <div id="two"> <app-cardlayout [sales_persons]="sales_persons"></app-cardlayout> </div>
+  </div>
+  </div>
+
+ 
+ 
+
+</div>
+<app-tablelayout [tableHeader]="tableHeader"></app-tablelayout>

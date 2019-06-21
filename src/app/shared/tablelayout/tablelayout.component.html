@@ -1,0 +1,64 @@
+<div class="table-div">
+    <div class="table-header">
+      Details
+    </div>
+    <div class="grid-view" style="overflow-x:auto;">
+      <table>
+        <tr>
+          <th class="table-heading">
+            Sales Rep
+          </th>
+          <th class="table-heading">
+            Date
+          </th>
+          <th class="table-heading">
+            Client
+          </th>
+  
+          <th class="table-heading">
+            Primary Contact Person
+          </th>
+          <th class="table-heading">
+            Title
+          </th>
+          <th class="table-heading">
+            Verticle
+          </th>
+          <th class="table-heading">
+            Meeting Location
+          </th>
+  
+          <th class="table-heading">
+            Purpose of Interaction
+          </th>
+          <th class="table-heading">
+            Outcome and Remarks
+          </th>
+  
+  
+          <th class="table-heading">
+            Engaement Status
+          </th>
+        </tr>
+  
+        <tr *ngFor="let item of tableHeader;let i = index"
+          [ngStyle]="{'background-color': colorSet(item.status.L[item.status.L.length - 1].S)}">
+          <td> {{item.sales_rp.S}} </td>
+          <td> {{item.date.S | date: 'MMM dd , yyyy' }} </td>
+          <td> {{item.client.S}} </td>
+          <td> {{item.primary_contact_person.S}} </td>
+          <td> {{item.title.S}} </td>
+          <td> {{item.verticle.S}} </td>
+          <td> {{item.meeting_location.S}} </td>
+          <td> {{item.purpose.S}} </td>
+          <td> {{item.outcome.S}} </td>
+  
+          <td> {{item.status.L[item.status.L.length - 1].S}} </td>
+  
+  
+        </tr>
+  
+  
+      </table>
+    </div>
+  </div>

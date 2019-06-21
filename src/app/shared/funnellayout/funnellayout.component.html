@@ -1,0 +1,192 @@
+<div class="row">
+  <div class="col-8">
+    <div class="outer">
+      <div class="imag">
+       <div class="row">
+         <div class="col-12">
+            <div class="f-heading">
+                Lead In
+              </div>
+              <div class="f-value" *ngIf="(funnel_data | json) != ({} | json)">
+                {{funnel_data.Lead_In}}
+              </div>
+              <div class="f-value" *ngIf="(funnel_data | json) == ({} | json)">
+                0
+              </div>
+         </div>
+         <div class="col-12">
+            <div class="f-heading">
+                Contact Made
+              </div>
+              <div class="f-value" *ngIf="(funnel_data | json) != ({} | json)">
+                {{funnel_data.Contact_Made}}
+              </div>
+              <div class="f-value" *ngIf="(funnel_data | json) == ({} | json)">
+                  0
+                </div>
+         </div>
+         <div class="col-12">
+            <div class="f-heading">
+                Needs Defined
+              </div>
+    
+              <div class="f-value" *ngIf="(funnel_data | json) != ({} | json)">
+                {{funnel_data.Needs_Defined}}
+              </div>
+              <div class="f-value" *ngIf="(funnel_data | json) == ({} | json)">
+                0
+              </div>
+         </div>
+         <div class="col-12">
+            <div class="f-heading">
+                Proposal Made
+              </div>
+    
+              <div class="f-value" *ngIf="(funnel_data | json) != ({} | json)">
+                {{funnel_data.Proposal_Made}}
+              </div>
+              <div class="f-value" *ngIf="(funnel_data | json) == ({} | json)">
+                0
+              </div>
+         </div>
+         <div class="col-12">
+            <div class="f-heading">
+                Negotiation Started
+              </div>
+    
+              <div class="f-value" *ngIf="(funnel_data | json) != ({} | json)">
+                {{funnel_data.Negotiation_Started}}
+              </div>
+              <div class="f-value" *ngIf="(funnel_data | json) == ({} | json)">
+                0
+              </div>
+         </div>
+         <div class="col-12">
+            <div class="f-Won">
+                Won
+              </div>
+    
+              <div class="f-Won" *ngIf="(funnel_data | json) != ({} | json)">
+                {{funnel_data.Won}}
+              </div>
+              <div class="f-Won" *ngIf="(funnel_data | json) == ({} | json)">
+                0
+              </div>
+         </div>
+       </div>
+        <!-- <div class="f1">
+            <div class="f-heading">
+                Lead In
+              </div>
+              <div class="f-value" *ngIf="(funnel_data | json) != ({} | json)">
+                {{funnel_data.Lead_In}}
+              </div>
+              <div class="f-value" *ngIf="(funnel_data | json) == ({} | json)">
+                0
+              </div>
+        </div>
+        <div class="f2">
+          <div class="f-heading">
+            Contact Made
+          </div>
+          <div class="f-value">
+            {{funnel_data.Contact_Made}}
+          </div>
+        </div>
+        <div class="f2">
+          <div class="f-heading">
+            Needs Defined
+          </div>
+
+          <div class="f-value" *ngIf="(funnel_data | json) != ({} | json)">
+            {{funnel_data.Needs_Defined}}
+          </div>
+          <div class="f-value" *ngIf="(funnel_data | json) == ({} | json)">
+            0
+          </div>
+        </div>
+        <div class="f2">
+          <div class="f-heading">
+            Proposal Made
+          </div>
+
+          <div class="f-value" *ngIf="(funnel_data | json) != ({} | json)">
+            {{funnel_data.Proposal_Made}}
+          </div>
+          <div class="f-value" *ngIf="(funnel_data | json) == ({} | json)">
+            0
+          </div>
+        </div>
+        <div class="f2">
+          <div class="f-heading">
+            Negotiation Started
+          </div>
+
+          <div class="f-value" *ngIf="(funnel_data | json) != ({} | json)">
+            {{funnel_data.Negotiation_Started}}
+          </div>
+          <div class="f-value" *ngIf="(funnel_data | json) == ({} | json)">
+            0
+          </div>
+        </div>
+        <div class="f2">
+          <div class="f-Won">
+            Won
+          </div>
+
+          <div class="f-Won" *ngIf="(funnel_data | json) != ({} | json)">
+            {{funnel_data.Won}}
+          </div>
+          <div class="f-Won" *ngIf="(funnel_data | json) == ({} | json)">
+            0
+          </div>
+        </div> -->
+
+      </div>
+
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="row">
+      <div class="col-12">
+          <div class="card-box">
+              <img src="/assets/images/ico-calls.png" class="img-call">
+             
+                <div class="heading">
+                  CALLS
+                </div>
+                <div class="card-val">
+                  {{call_done}}/{{total_call}}
+                </div>
+              
+            </div>
+      </div>
+      <div class="col-12">
+          <div class="card-box">
+              <img src="/assets/images/ico-wins.png" class="img-call">
+              <div class="heading">
+                WINS
+              </div>
+              <div class="card-val">
+                {{wins}}/{{total_wins}}
+              </div>
+  
+            </div>
+      </div>
+      <div class="col-12">
+          <div class="card-box">
+              <img src="/assets/images/ico-revenue.png" class="img-call">
+              <div class="heading">
+                INCREMENTED REVENUE
+              </div>
+              <div class="card-val">
+                {{revennu}}K/{{total_revenu}}K
+              </div>
+            </div>
+      </div>
+    </div>
+ 
+      
+  </div>
+ 
+</div>

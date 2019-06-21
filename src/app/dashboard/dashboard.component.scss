@@ -1,0 +1,30 @@
+.main{
+    
+    position: relative;
+    display: block;
+    height: auto;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-family: Roboto;
+    height: auto;
+}
+
+.wrapper {    
+    overflow:hidden;
+    margin-top: 25px;
+  }
+  
+ 
+  #one {
+    
+    float:left;     
+    width:75%;
+    overflow: hidden;
+  }
+  #two { 
+   
+    overflow:hidden;
+    margin-left:calc(75% + 40px);
+   
+    
+  }
